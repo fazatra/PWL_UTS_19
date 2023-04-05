@@ -43,9 +43,9 @@
  <td>{{ $Mahasiswa->Alamat }}</td>
  <td>{{ $Mahasiswa->Bb_Lahir }}</td>
  <td>{{ $Mahasiswa->Tb_Lahir }}</td>
- <td>{{ $Mahasiswa->ama_Ortu }}</td>
+ <td>{{ $Mahasiswa->Nama_Ortu }}</td>
  <td>
- <form action="{{ route('mahasiswas.destroy',$Mahasiswa->Nim) }}" method="POST">
+ <form action="{{ route('mahasiswas.destroy',$Mahasiswa->No_Urut) }}" method="POST">
 
  <a class="btn btn-info" href="{{ route('mahasiswas.show',$Mahasiswa->No_Urut) }}">Show</a>
  <a class="btn btn-primary" href="{{ route('mahasiswas.edit',$Mahasiswa->No_Urut) }}">Edit</a>

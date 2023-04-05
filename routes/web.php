@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PengalamanKuliahController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -21,7 +22,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('Mahasiswas', MahasiswaController::class);
+Route::resource('mahasiswas', MahasiswaController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class,'dashboard'])->name('dashboard');
 Route::get('/profile', [ProfileController::class,'profile']);
